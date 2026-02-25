@@ -62,7 +62,7 @@ export default function Home() {
       <ul>
         <li><strong>백업</strong> — 코드가 내 컴퓨터에서 날아가도 GitHub에 남아있습니다</li>
         <li><strong>협업</strong> — 여러 명이 같은 프로젝트를 동시에 작업할 수 있습니다</li>
-        <li><strong>히스토리 관리</strong> — 모든 변경 기록이 남아서 언제든 이전 버전으로 복구할 수 있습니다</li>
+        <li><strong>버전 관리</strong> — 모든 변경 기록이 남아서 언제든 이전 버전으로 복구할 수 있습니다</li>
         <li><strong>포트폴리오</strong> — 내가 만든 프로젝트를 세상에 보여줄 수 있습니다</li>
       </ul>
 
