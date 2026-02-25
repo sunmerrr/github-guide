@@ -1,16 +1,36 @@
-# React + Vite
+# GitHub 초보자 가이드
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Git과 GitHub를 처음 시작하는 분을 위한 실습 중심 안내서입니다.
 
-Currently, two official plugins are available:
+## 페이지 구성
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+| # | 페이지 | 내용 |
+|---|--------|------|
+| 01 | Setup | GitHub 가입, Git 설치, 초기 설정 |
+| 02 | First Repo | 첫 저장소 만들기 실습 |
+| 03 | Commit | 파일 수정 → add → commit |
+| 04 | Push & Pull | GitHub와 동기화하기 |
+| 05 | Branch | 브랜치 만들기 & 전환 |
+| 06 | Pull Request | PR 만들기 & 머지 |
+| 07 | Cheatsheet | 명령어 한눈에 보기 |
 
-## React Compiler
+각 페이지는 1~2분이면 읽을 수 있도록 핵심만 담았습니다.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 기술 스택
 
-## Expanding the ESLint configuration
+- Vite + React
+- React Router (HashRouter)
+- GitHub 다크 테마 CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 실행
+
+```bash
+# 개발 서버
+npm install
+npm run dev
+
+# 빌드
+npm run build
+```
+
+빌드 후 `dist/index.html`을 브라우저에서 바로 열 수 있습니다.
