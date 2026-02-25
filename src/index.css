@@ -359,29 +359,17 @@ code {
 }
 
 /* ===== Intro Links ===== */
-.intro-link,
-.intro-highlight {
-  display: inline;
-  font-weight: 600;
-  padding: 0.1em 0.45em;
-  border-radius: 4px;
-  font-size: 0.95em;
-  transition: background 0.15s, color 0.15s;
-}
 .intro-link {
-  color: var(--text-primary);
-  background: var(--bg-tertiary);
-  border-bottom: 1.5px solid var(--accent);
-}
-.intro-link:hover {
-  background: var(--accent);
-  color: #fff;
+  color: var(--accent);
+  font-weight: 600;
   text-decoration: none;
 }
+.intro-link:hover {
+  text-decoration: underline;
+}
 .intro-highlight {
   color: var(--text-primary);
-  background: var(--bg-tertiary);
-  border-bottom: 1.5px solid var(--green);
+  font-weight: 600;
 }
 
 /* ===== Cheatsheet Table ===== */
