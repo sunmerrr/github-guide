@@ -6,14 +6,26 @@ const NAV_MAIN = [
   { to: '/first-repo', label: 'First Repo' },
   { to: '/commit', label: 'Commit' },
   { to: '/push-pull', label: 'Push & Pull' },
+];
+
+const NAV_ADVANCED = [
   { to: '/branch', label: 'Branch' },
   { to: '/pull-request', label: 'PR' },
+  { to: '/conflict', label: 'Conflict' },
 ];
 
 const NAV_TIP = [
   { to: '/cheatsheet', label: 'Cheatsheet' },
   { to: '/glossary', label: 'Glossary' },
 ];
+
+function NavLinks({ items }) {
+  return items.map((n) => (
+    <NavLink key={n.to} to={n.to} className={({ isActive }) => isActive ? 'active' : ''}>
+      {n.label}
+    </NavLink>
+  ));
+}
 
 export default function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,17 +44,11 @@ export default function Layout() {
             GitHub Guide
           </NavLink>
           <div className="nav-links nav-links-desktop">
-            {NAV_MAIN.map((n) => (
-              <NavLink key={n.to} to={n.to} className={({ isActive }) => isActive ? 'active' : ''}>
-                {n.label}
-              </NavLink>
-            ))}
+            <NavLinks items={NAV_MAIN} />
             <span className="nav-divider" />
-            {NAV_TIP.map((n) => (
-              <NavLink key={n.to} to={n.to} className={({ isActive }) => isActive ? 'active' : ''}>
-                {n.label}
-              </NavLink>
-            ))}
+            <NavLinks items={NAV_ADVANCED} />
+            <span className="nav-divider" />
+            <NavLinks items={NAV_TIP} />
           </div>
           <button
             className="hamburger"
@@ -55,17 +61,14 @@ export default function Layout() {
         </div>
         {menuOpen && (
           <div className="nav-links nav-links-mobile">
-            {NAV_MAIN.map((n) => (
-              <NavLink key={n.to} to={n.to} className={({ isActive }) => isActive ? 'active' : ''}>
-                {n.label}
-              </NavLink>
-            ))}
+            <span className="nav-section-label">기본</span>
+            <NavLinks items={NAV_MAIN} />
             <span className="nav-divider" />
-            {NAV_TIP.map((n) => (
-              <NavLink key={n.to} to={n.to} className={({ isActive }) => isActive ? 'active' : ''}>
-                {n.label}
-              </NavLink>
-            ))}
+            <span className="nav-section-label">심화</span>
+            <NavLinks items={NAV_ADVANCED} />
+            <span className="nav-divider" />
+            <span className="nav-section-label">참고</span>
+            <NavLinks items={NAV_TIP} />
           </div>
         )}
       </header>

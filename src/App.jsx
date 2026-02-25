@@ -7,6 +7,7 @@ import Commit from './pages/Commit';
 import PushPull from './pages/PushPull';
 import Branch from './pages/Branch';
 import PullRequest from './pages/PullRequest';
+import Conflict from './pages/Conflict';
 import Cheatsheet from './pages/Cheatsheet';
 import Glossary from './pages/Glossary';
 
@@ -21,6 +22,7 @@ const router = createHashRouter([
       { path: '/push-pull', element: <PushPull /> },
       { path: '/branch', element: <Branch /> },
       { path: '/pull-request', element: <PullRequest /> },
+      { path: '/conflict', element: <Conflict /> },
       { path: '/cheatsheet', element: <Cheatsheet /> },
       { path: '/glossary', element: <Glossary /> },
     ],

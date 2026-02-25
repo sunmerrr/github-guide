@@ -8,6 +8,7 @@ const PAGES = [
   { path: '/push-pull', title: 'Push & Pull' },
   { path: '/branch', title: 'Branch' },
   { path: '/pull-request', title: 'Pull Request' },
+  { path: '/conflict', title: 'Conflict' },
   { path: '/cheatsheet', title: 'Cheatsheet' },
   { path: '/glossary', title: 'Glossary' },
 ];

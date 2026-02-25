@@ -1,15 +1,36 @@
 import { Link } from 'react-router-dom';
 
-const CARDS = [
+const CARDS_MAIN = [
   { num: '01', path: '/setup', title: 'Setup', desc: 'GitHub 가입, Git 설치, 초기 설정' },
   { num: '02', path: '/first-repo', title: 'First Repo', desc: '첫 저장소 만들기 실습' },
   { num: '03', path: '/commit', title: 'Commit', desc: '파일 수정 → add → commit' },
   { num: '04', path: '/push-pull', title: 'Push & Pull', desc: 'GitHub와 동기화하기' },
+];
+
+const CARDS_ADVANCED = [
   { num: '05', path: '/branch', title: 'Branch', desc: '브랜치 만들기 & 전환' },
   { num: '06', path: '/pull-request', title: 'Pull Request', desc: 'PR 만들기 & 머지' },
-  { num: '07', path: '/cheatsheet', title: 'Cheatsheet', desc: '명령어 한눈에 보기' },
-  { num: '08', path: '/glossary', title: 'Glossary', desc: 'Git/GitHub 용어 사전' },
+  { num: '07', path: '/conflict', title: 'Conflict', desc: '충돌 해결하기' },
 ];
+
+const CARDS_TIP = [
+  { icon: '📋', path: '/cheatsheet', title: 'Cheatsheet', desc: '명령어 한눈에 보기' },
+  { icon: '📖', path: '/glossary', title: 'Glossary', desc: 'Git/GitHub 용어 사전' },
+];
+
+function CardGrid({ cards, isTip }) {
+  return (
+    <div className="home-cards">
+      {cards.map((c) => (
+        <Link key={c.path} to={c.path} className="home-card">
+          <div className="card-num">{isTip ? c.icon : c.num}</div>
+          <div className="card-title">{c.title}</div>
+          <div className="card-desc">{c.desc}</div>
+        </Link>
+      ))}
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -43,16 +64,28 @@ export default function Home() {
         <li><strong>포트폴리오</strong> — 내가 만든 프로젝트를 세상에 보여줄 수 있습니다</li>
       </ul>
 
-      <p>순서대로 따라하면 Git의 기본 워크플로우를 익힐 수 있습니다.</p>
+      <div className="home-section">
+        <div className="home-section-header">
+          <h2 className="home-section-title">📌 기본</h2>
+          <p className="home-section-desc">이것만 따라하면 GitHub를 쓸 수 있어요</p>
+        </div>
+        <CardGrid cards={CARDS_MAIN} />
+      </div>
 
-      <div className="home-cards">
-        {CARDS.map((c) => (
-          <Link key={c.path} to={c.path} className="home-card">
-            <div className="card-num">{c.num}</div>
-            <div className="card-title">{c.title}</div>
-            <div className="card-desc">{c.desc}</div>
-          </Link>
-        ))}
+      <div className="home-section">
+        <div className="home-section-header">
+          <h2 className="home-section-title">🚀 심화</h2>
+          <p className="home-section-desc">협업할 때 필요한 스킬입니다. 처음엔 건너뛰어도 괜찮아요.</p>
+        </div>
+        <CardGrid cards={CARDS_ADVANCED} />
+      </div>
+
+      <div className="home-section">
+        <div className="home-section-header">
+          <h2 className="home-section-title">📎 참고</h2>
+          <p className="home-section-desc">필요할 때 찾아보세요</p>
+        </div>
+        <CardGrid cards={CARDS_TIP} isTip />
       </div>
     </>
   );

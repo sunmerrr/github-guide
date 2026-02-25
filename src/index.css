@@ -341,6 +341,23 @@ code {
   color: var(--text-secondary);
 }
 
+/* ===== Home Sections ===== */
+.home-section {
+  margin-top: 2.5rem;
+}
+.home-section-header {
+  margin-bottom: 0.25rem;
+}
+.home-section-title {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+.home-section-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
 /* ===== Cheatsheet Table ===== */
 .cheat-table {
   width: 100%;
@@ -386,6 +403,17 @@ code {
   width: auto;
   height: 1px;
   margin: 0.35rem 0;
+}
+
+/* 모바일 메뉴 섹션 라벨 */
+.nav-section-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1rem 0.15rem;
 }
 
 /* 기본: 모바일 메뉴 숨김, 데스크톱 메뉴 표시 */
