@@ -363,6 +363,7 @@ code {
   }
   .page-nav a.next {
     text-align: left;
+    margin-left: 0;
   }
   .home-cards {
     grid-template-columns: 1fr;
