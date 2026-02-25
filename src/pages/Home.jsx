@@ -8,6 +8,7 @@ const CARDS = [
   { num: '05', path: '/branch', title: 'Branch', desc: '브랜치 만들기 & 전환' },
   { num: '06', path: '/pull-request', title: 'Pull Request', desc: 'PR 만들기 & 머지' },
   { num: '07', path: '/cheatsheet', title: 'Cheatsheet', desc: '명령어 한눈에 보기' },
+  { num: '08', path: '/glossary', title: 'Glossary', desc: 'Git/GitHub 용어 사전' },
 ];
 
 export default function Home() {

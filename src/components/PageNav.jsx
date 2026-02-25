@@ -9,6 +9,7 @@ const PAGES = [
   { path: '/branch', title: 'Branch' },
   { path: '/pull-request', title: 'Pull Request' },
   { path: '/cheatsheet', title: 'Cheatsheet' },
+  { path: '/glossary', title: 'Glossary' },
 ];
 
 export default function PageNav({ current }) {

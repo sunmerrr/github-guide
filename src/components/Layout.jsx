@@ -8,6 +8,7 @@ const NAV = [
   { to: '/branch', label: 'Branch' },
   { to: '/pull-request', label: 'PR' },
   { to: '/cheatsheet', label: 'Cheatsheet' },
+  { to: '/glossary', label: 'Glossary' },
 ];
 
 export default function Layout() {

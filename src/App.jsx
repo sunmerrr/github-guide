@@ -8,6 +8,7 @@ import PushPull from './pages/PushPull';
 import Branch from './pages/Branch';
 import PullRequest from './pages/PullRequest';
 import Cheatsheet from './pages/Cheatsheet';
+import Glossary from './pages/Glossary';
 
 const router = createHashRouter([
   {
@@ -21,6 +22,7 @@ const router = createHashRouter([
       { path: '/branch', element: <Branch /> },
       { path: '/pull-request', element: <PullRequest /> },
       { path: '/cheatsheet', element: <Cheatsheet /> },
+      { path: '/glossary', element: <Glossary /> },
     ],
   },
 ]);
