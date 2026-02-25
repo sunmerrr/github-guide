@@ -56,7 +56,7 @@ a:hover {
   padding: 0 1.5rem;
 }
 .top-nav-inner {
-  max-width: 960px;
+  max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -89,9 +89,9 @@ a:hover {
   }
 }
 .nav-links a {
-  padding: 0.35rem 0.7rem;
+  padding: 0.35rem 0.5rem;
   border-radius: var(--radius);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--text-secondary);
   white-space: nowrap;
   transition: background 0.15s, color 0.15s;
