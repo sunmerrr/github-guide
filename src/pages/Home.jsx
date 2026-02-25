@@ -39,6 +39,8 @@ export default function Home() {
       <p>
         Git과 GitHub를 처음 시작하는 분을 위한 실습 중심 안내서입니다.
         <br />
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="intro-link">GitHub 웹사이트</a>와 <span className="intro-highlight">터미널 명령어</span>를 함께 사용하며 배웁니다.
+        <br />
         각 페이지는 <strong>1~2분</strong>이면 읽을 수 있도록 핵심만 담았습니다.
       </p>
 
