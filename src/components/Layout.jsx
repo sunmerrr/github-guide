@@ -28,6 +28,13 @@ export default function Layout() {
             <img src="./github.svg" alt="GitHub" style={{ width: 24, height: 24, verticalAlign: 'middle', marginRight: 8 }} />
             GitHub Guide
           </NavLink>
+          <div className="nav-links nav-links-desktop">
+            {NAV.map((n) => (
+              <NavLink key={n.to} to={n.to} className={({ isActive }) => isActive ? 'active' : ''}>
+                {n.label}
+              </NavLink>
+            ))}
+          </div>
           <button
             className="hamburger"
             aria-label={menuOpen ? '메뉴 닫기' : '메뉴 열기'}
@@ -36,14 +43,16 @@ export default function Layout() {
           >
             {menuOpen ? '✕' : '☰'}
           </button>
-          <div className={`nav-links${menuOpen ? ' open' : ''}`}>
+        </div>
+        {menuOpen && (
+          <div className="nav-links nav-links-mobile">
             {NAV.map((n) => (
               <NavLink key={n.to} to={n.to} className={({ isActive }) => isActive ? 'active' : ''}>
                 {n.label}
               </NavLink>
             ))}
           </div>
-        </div>
+        )}
       </header>
       <main className="page-content">
         <Outlet />
