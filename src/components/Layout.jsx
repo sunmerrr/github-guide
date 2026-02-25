@@ -1,13 +1,16 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Outlet, useLocation, ScrollRestoration } from 'react-router-dom';
 
-const NAV = [
+const NAV_MAIN = [
   { to: '/setup', label: 'Setup' },
   { to: '/first-repo', label: 'First Repo' },
   { to: '/commit', label: 'Commit' },
   { to: '/push-pull', label: 'Push & Pull' },
   { to: '/branch', label: 'Branch' },
   { to: '/pull-request', label: 'PR' },
+];
+
+const NAV_TIP = [
   { to: '/cheatsheet', label: 'Cheatsheet' },
   { to: '/glossary', label: 'Glossary' },
 ];
@@ -29,7 +32,13 @@ export default function Layout() {
             GitHub Guide
           </NavLink>
           <div className="nav-links nav-links-desktop">
-            {NAV.map((n) => (
+            {NAV_MAIN.map((n) => (
+              <NavLink key={n.to} to={n.to} className={({ isActive }) => isActive ? 'active' : ''}>
+                {n.label}
+              </NavLink>
+            ))}
+            <span className="nav-divider" />
+            {NAV_TIP.map((n) => (
               <NavLink key={n.to} to={n.to} className={({ isActive }) => isActive ? 'active' : ''}>
                 {n.label}
               </NavLink>
@@ -46,7 +55,13 @@ export default function Layout() {
         </div>
         {menuOpen && (
           <div className="nav-links nav-links-mobile">
-            {NAV.map((n) => (
+            {NAV_MAIN.map((n) => (
+              <NavLink key={n.to} to={n.to} className={({ isActive }) => isActive ? 'active' : ''}>
+                {n.label}
+              </NavLink>
+            ))}
+            <span className="nav-divider" />
+            {NAV_TIP.map((n) => (
               <NavLink key={n.to} to={n.to} className={({ isActive }) => isActive ? 'active' : ''}>
                 {n.label}
               </NavLink>

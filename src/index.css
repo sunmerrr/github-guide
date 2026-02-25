@@ -103,6 +103,14 @@ a:hover {
 .nav-links::-webkit-scrollbar {
   display: none;
 }
+.nav-divider {
+  width: 1px;
+  background: var(--border);
+  align-self: stretch;
+  margin: 0.5rem 0.35rem;
+  flex-shrink: 0;
+}
+
 .nav-links a {
   padding: 0.35rem 0.5rem;
   border-radius: var(--radius);
@@ -373,6 +381,11 @@ code {
   display: flex;
   align-items: center;
   border-radius: var(--radius);
+}
+.nav-links-mobile .nav-divider {
+  width: auto;
+  height: 1px;
+  margin: 0.35rem 0;
 }
 
 /* 기본: 모바일 메뉴 숨김, 데스크톱 메뉴 표시 */
