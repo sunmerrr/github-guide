@@ -17,7 +17,7 @@ export default function Layout() {
         <div className="top-nav-inner">
           <NavLink to="/" className="logo">
             <img src="./github.svg" alt="GitHub" style={{ width: 24, height: 24, verticalAlign: 'middle', marginRight: 8 }} />
-            Git Guide
+            GitHub Guide
           </NavLink>
           <div className="nav-links">
             {NAV.map((n) => (
