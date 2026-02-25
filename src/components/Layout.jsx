@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { NavLink, Outlet, useLocation, ScrollRestoration } from 'react-router-dom';
 
 const NAV = [
@@ -12,6 +13,13 @@ const NAV = [
 ];
 
 export default function Layout() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
+
   return (
     <>
       <header className="top-nav">
@@ -20,7 +28,15 @@ export default function Layout() {
             <img src="./github.svg" alt="GitHub" style={{ width: 24, height: 24, verticalAlign: 'middle', marginRight: 8 }} />
             GitHub Guide
           </NavLink>
-          <div className="nav-links">
+          <button
+            className="hamburger"
+            aria-label={menuOpen ? '메뉴 닫기' : '메뉴 열기'}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((v) => !v)}
+          >
+            {menuOpen ? '✕' : '☰'}
+          </button>
+          <div className={`nav-links${menuOpen ? ' open' : ''}`}>
             {NAV.map((n) => (
               <NavLink key={n.to} to={n.to} className={({ isActive }) => isActive ? 'active' : ''}>
                 {n.label}
