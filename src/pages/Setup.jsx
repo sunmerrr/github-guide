@@ -96,12 +96,19 @@ export default function Setup() {
       <h2>3. Git 설치</h2>
 
       <h3>Mac</h3>
+      <p>먼저 Homebrew를 설치합니다. Homebrew는 Mac에서 프로그램을 터미널로 간편하게 설치할 수 있는 도구로, 앞으로도 자주 쓰이니 설치해두면 좋습니다.</p>
+      <CodeBlock>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</CodeBlock>
+      <p>Homebrew 설치가 끝나면 Git을 설치합니다.</p>
       <CodeBlock>brew install git</CodeBlock>
-      <p>Homebrew가 없다면 터미널에 <code>git</code>을 입력하면 Xcode 도구 설치를 안내합니다.</p>
+
+      <Callout type="info">
+        이미 Homebrew가 설치되어 있다면 바로 <code>brew install git</code>만 실행하면 됩니다.
+      </Callout>
 
       <h3>Windows</h3>
       <p>
-        <a href="https://git-scm.com" target="_blank" rel="noreferrer">git-scm.com</a>에서 다운로드 후 설치. 설치 중 옵션은 기본값으로 두면 됩니다.
+        <a href="https://git-scm.com/downloads/win" target="_blank" rel="noreferrer">git-scm.com/downloads/win</a>에 접속하면 자동으로 설치 파일이 다운로드됩니다.
+        다운로드된 <strong>.exe</strong> 파일을 실행하고, 설치 중 나오는 옵션은 모두 기본값으로 두고 Next를 눌러 완료합니다.
       </p>
 
       <h3>설치 확인</h3>
