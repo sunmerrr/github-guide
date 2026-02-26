@@ -188,7 +188,7 @@ export default function FirstRepo() {
             Setup만 완료했다면, 이 페이지부터의 모든 Git 작업을
             AI에게 맡길 수 있습니다. 명령어를 몰라도 괜찮아요.
           </div>
-          <a href="#/ai-helper" style={{
+          <a href="/ai-helper" style={{
             display: 'inline-block',
             marginTop: '0.5rem',
             padding: '0.35rem 0.85rem',

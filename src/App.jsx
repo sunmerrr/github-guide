@@ -1,4 +1,4 @@
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Setup from './pages/Setup';
@@ -12,7 +12,7 @@ import Cheatsheet from './pages/Cheatsheet';
 import Glossary from './pages/Glossary';
 import AiHelper from './pages/AiHelper';
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     element: <Layout />,
     children: [

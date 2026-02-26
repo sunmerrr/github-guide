@@ -67,7 +67,7 @@ export default function AiHelper() {
 
       {/* ===== 사전 준비 ===== */}
       <Callout type="tip">
-        GitHub 가입, Git 설치, 초기 설정은 <a href="#/setup">Setup 페이지</a>에서
+        GitHub 가입, Git 설치, 초기 설정은 <a href="/setup">Setup 페이지</a>에서
         다루고 있습니다.
         <strong> 이미 끝냈다면 바로{' '}
           <a
@@ -85,7 +85,7 @@ export default function AiHelper() {
         <li><code>git config</code>로 이름/이메일 설정</li>
       </ul>
       <p>
-        자세한 방법은 <a href="#/setup">Setup 페이지</a>를 참고하세요.
+        자세한 방법은 <a href="/setup">Setup 페이지</a>를 참고하세요.
       </p>
 
       <h3 id="gh-cli">GitHub CLI 인증 (처음 한 번)</h3>
