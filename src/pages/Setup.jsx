@@ -70,6 +70,7 @@ export default function Setup() {
       <h2>2. Git 설치</h2>
 
       <h3>Mac</h3>
+      <p>터미널을 열고 아래 명령어를 입력하세요.</p>
       <CodeBlock>brew install git</CodeBlock>
       <p>Homebrew가 없다면 터미널에 <code>git</code>을 입력하면 Xcode 도구 설치를 안내합니다.</p>
 
@@ -79,6 +80,7 @@ export default function Setup() {
       </p>
 
       <h3>설치 확인</h3>
+      <p>터미널에서 아래 명령어를 입력해 설치를 확인합니다.</p>
       <CodeBlock>git --version</CodeBlock>
 
       <TerminalOutput command="git --version">
@@ -88,7 +90,7 @@ export default function Setup() {
 
       {/* ===== 3. 초기 설정 ===== */}
       <h2>3. 초기 설정</h2>
-      <p>Git에 내 이름과 이메일을 등록합니다. (커밋할 때 사용됩니다)</p>
+      <p>터미널에서 Git에 내 이름과 이메일을 등록합니다. (커밋할 때 사용됩니다)</p>
       <CodeBlock>{`git config --global user.name "내 이름"
 git config --global user.email "내이메일@example.com"`}</CodeBlock>
 
