@@ -72,6 +72,13 @@ export default function Setup() {
         먼저 터미널을 열어주세요.
       </p>
 
+      <Callout type="info">
+        터미널 기본 사용법(폴더 이동, 파일 목록 보기 등)은{' '}
+        <a href="https://lulu-claude-code-guide.vercel.app/install#terminal" target="_blank" rel="noopener noreferrer">
+          Claude Code 가이드 — 터미널 기본 사용법
+        </a>에서 자세히 다루고 있습니다.
+      </Callout>
+
       <h3 id="terminal-mac">Mac</h3>
       <p>
         Spotlight 검색(<code>Cmd + Space</code>)에서 <strong>터미널</strong>을 검색하거나,
