@@ -70,10 +70,7 @@ export default function AiHelper() {
         GitHub 가입, Git 설치, 초기 설정은 <a href="/setup">Setup 페이지</a>에서
         다루고 있습니다.
         <strong> 이미 끝냈다면 바로{' '}
-          <a
-            href="#gh-cli"
-            onClick={(e) => { e.preventDefault(); document.getElementById('gh-cli')?.scrollIntoView({ behavior: 'smooth' }); }}
-          >GitHub CLI 인증</a>
+          <a href="#gh-cli">GitHub CLI 인증</a>
         으로 넘어가세요.</strong>
       </Callout>
 
