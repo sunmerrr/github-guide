@@ -79,6 +79,26 @@ export default function AiHelper() {
         이 준비가 끝나면 나머지는 전부 AI에게 맡길 수 있습니다.
       </p>
 
+      <h3>GitHub CLI 인증 (처음 한 번)</h3>
+      <p>
+        AI가 터미널에서 GitHub 저장소를 만들려면 <strong>GitHub CLI(gh)</strong>가 필요합니다.
+        아래 명령어를 한 번만 실행하면 이후로는 AI가 알아서 저장소 생성, PR 만들기 등을 처리할 수 있습니다.
+      </p>
+      <CodeBlock>{`# 1. GitHub CLI 설치
+# Mac
+brew install gh
+# Windows — https://cli.github.com 에서 다운로드
+
+# 2. 인증 (브라우저가 열리면 로그인하세요)
+gh auth login`}</CodeBlock>
+
+      <Callout type="warn">
+        <code>gh auth login</code>을 실행하면 터미널에 몇 가지 질문이 나옵니다.
+        모두 기본값(Enter)으로 진행하면 브라우저가 열리고,
+        GitHub에 로그인하면 인증이 완료됩니다.
+        <strong> 이 과정은 처음 한 번만 하면 됩니다.</strong>
+      </Callout>
+
       {/* ===== 말하는 법 ===== */}
       <h2>AI에게 이렇게 말하세요</h2>
       <p>
