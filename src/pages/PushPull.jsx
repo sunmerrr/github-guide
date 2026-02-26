@@ -10,7 +10,7 @@ export default function PushPull() {
       <p>로컬 변경 사항을 GitHub에 올리고, GitHub의 변경 사항을 내려받는 방법.</p>
 
       {/* ===== Push ===== */}
-      <h2>Push — 올리기</h2>
+      <h2 id="push">Push — 올리기</h2>
       <p>로컬 커밋을 GitHub에 업로드합니다.</p>
       <CodeBlock>git push</CodeBlock>
 
@@ -73,7 +73,7 @@ export default function PushPull() {
       </GithubMockup>
 
       {/* ===== Pull ===== */}
-      <h2>Pull — 내려받기</h2>
+      <h2 id="pull">Pull — 내려받기</h2>
       <p>GitHub에 있는 최신 변경 사항을 로컬로 가져옵니다.</p>
       <CodeBlock>git pull</CodeBlock>
 
@@ -94,7 +94,7 @@ export default function PushPull() {
       </Callout>
 
       {/* ===== Clone ===== */}
-      <h2>Clone — 복제하기</h2>
+      <h2 id="clone">Clone — 복제하기</h2>
       <p>다른 사람의 저장소(또는 내 다른 컴퓨터)에서 프로젝트를 처음 가져올 때:</p>
       <CodeBlock>git clone https://github.com/유저이름/저장소이름.git</CodeBlock>
 
@@ -108,7 +108,7 @@ export default function PushPull() {
       <p>clone 하면 자동으로 remote 설정까지 완료됩니다.</p>
 
       {/* ===== 요약 ===== */}
-      <h2>전체 흐름 요약</h2>
+      <h2 id="summary">전체 흐름 요약</h2>
       <CodeBlock>{`# 1. 최신 코드 받기
 git pull
 

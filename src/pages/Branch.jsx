@@ -9,13 +9,13 @@ export default function Branch() {
       <h1>Branch</h1>
       <p>브랜치를 사용하면 기존 코드에 영향 없이 새로운 작업을 할 수 있습니다.</p>
 
-      <h2>브랜치란?</h2>
+      <h2 id="what-is-branch">브랜치란?</h2>
       <p>
         <strong>main</strong> 브랜치 = 안정된 코드.
         새 기능이나 수정은 별도 브랜치에서 작업한 뒤, 완료되면 main에 합칩니다.
       </p>
 
-      <h2>왜 브랜치를 쓰나요?</h2>
+      <h2 id="why-branch">왜 브랜치를 쓰나요?</h2>
       <ul>
         <li><strong>안전한 실험</strong> — main 코드를 건드리지 않고 새 기능을 시도할 수 있습니다</li>
         <li><strong>동시 작업</strong> — 여러 사람이 각자 브랜치에서 독립적으로 개발할 수 있습니다</li>
@@ -45,7 +45,7 @@ export default function Branch() {
       </div>
 
       {/* ===== 1 ===== */}
-      <h2>1. 브랜치 만들기 & 전환</h2>
+      <h2 id="create-branch">1. 브랜치 만들기 & 전환</h2>
       <CodeBlock>git checkout -b feature/hello</CodeBlock>
       <p>
         <code>-b</code> 옵션은 브랜치 생성 + 전환을 한번에 합니다.
@@ -56,7 +56,7 @@ export default function Branch() {
       </TerminalOutput>
 
       {/* ===== 2 ===== */}
-      <h2>2. 현재 브랜치 확인</h2>
+      <h2 id="check-branch">2. 현재 브랜치 확인</h2>
       <CodeBlock>git branch</CodeBlock>
 
       <TerminalOutput command="git branch">
@@ -67,7 +67,7 @@ export default function Branch() {
       <p>별표(<code>*</code>)와 초록색이 현재 브랜치입니다.</p>
 
       {/* ===== 3 ===== */}
-      <h2>3. 브랜치에서 작업 & 커밋</h2>
+      <h2 id="work-on-branch">3. 브랜치에서 작업 & 커밋</h2>
       <CodeBlock>{`echo "새 기능 추가" >> README.md
 git add .
 git commit -m "feature: 인사 기능 추가"`}</CodeBlock>
@@ -78,7 +78,7 @@ git commit -m "feature: 인사 기능 추가"`}</CodeBlock>
       </TerminalOutput>
 
       {/* ===== 4 ===== */}
-      <h2>4. 브랜치 전환</h2>
+      <h2 id="switch-branch">4. 브랜치 전환</h2>
       <CodeBlock>git checkout main</CodeBlock>
 
       <TerminalOutput command="git checkout main">
@@ -91,7 +91,7 @@ git commit -m "feature: 인사 기능 추가"`}</CodeBlock>
       </Callout>
 
       {/* ===== 5 ===== */}
-      <h2>5. 브랜치 push</h2>
+      <h2 id="push-branch">5. 브랜치 push</h2>
       <CodeBlock>git push -u origin feature/hello</CodeBlock>
 
       <TerminalOutput command="git push -u origin feature/hello">

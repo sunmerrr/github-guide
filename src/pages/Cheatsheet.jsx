@@ -57,7 +57,7 @@ export default function Cheatsheet() {
 
       {SECTIONS.map((s) => (
         <div key={s.title}>
-          <h2>{s.title}</h2>
+          <h2 id={s.title.toLowerCase()}>{s.title}</h2>
           <table className="cheat-table">
             <thead>
               <tr>

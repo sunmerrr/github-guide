@@ -9,7 +9,7 @@ export default function PullRequest() {
       <h1>Pull Request</h1>
       <p>브랜치의 변경 사항을 main에 합치기 전에 리뷰를 요청하는 과정입니다.</p>
 
-      <h2>PR 흐름</h2>
+      <h2 id="pr-flow">PR 흐름</h2>
       <div style={{
         background: '#161b22', border: '1px solid #30363d', borderRadius: 8,
         padding: '1rem 1.25rem', marginBottom: '1.25rem',
@@ -28,7 +28,7 @@ export default function PullRequest() {
       </div>
 
       {/* ===== 1 ===== */}
-      <h2>1. 브랜치 push</h2>
+      <h2 id="pr-push">1. 브랜치 push</h2>
       <CodeBlock>git push -u origin feature/hello</CodeBlock>
       <p>push하면 GitHub에 알림 배너가 나타납니다.</p>
 
@@ -47,7 +47,7 @@ export default function PullRequest() {
       </GithubMockup>
 
       {/* ===== 2 ===== */}
-      <h2>2. GitHub에서 PR 만들기</h2>
+      <h2 id="create-pr">2. GitHub에서 PR 만들기</h2>
       <p><strong>Compare & pull request</strong> 버튼을 클릭하면 PR 작성 화면이 나옵니다.</p>
 
       <GithubMockup title="github.com — Open a pull request">
@@ -98,7 +98,7 @@ export default function PullRequest() {
       </Callout>
 
       {/* ===== 3 ===== */}
-      <h2>3. Merge</h2>
+      <h2 id="merge">3. Merge</h2>
       <p>리뷰가 완료되면 <strong>Merge pull request</strong> 버튼을 클릭합니다.</p>
 
       <GithubMockup title="github.com — Pull request #1">
@@ -159,7 +159,7 @@ export default function PullRequest() {
       </GithubMockup>
 
       {/* ===== 4 ===== */}
-      <h2>4. 로컬 정리</h2>
+      <h2 id="cleanup">4. 로컬 정리</h2>
       <p>merge가 끝났으니 로컬에서도 최신 상태로 맞추고, 다 쓴 브랜치를 삭제합니다.</p>
       <CodeBlock>{`git checkout main
 git pull

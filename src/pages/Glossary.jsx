@@ -56,7 +56,7 @@ export default function Glossary() {
 
       {TERMS.map((section) => (
         <div key={section.category}>
-          <h2>{section.category}</h2>
+          <h2 id={section.category.replace(/\s+/g, '-').replace(/[\/]/g, '-').toLowerCase()}>{section.category}</h2>
           <table className="cheat-table">
             <thead>
               <tr>

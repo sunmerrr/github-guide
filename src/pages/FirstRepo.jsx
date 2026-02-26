@@ -206,18 +206,18 @@ export default function FirstRepo() {
       </div>
 
       {/* ===== STEP 1 ===== */}
-      <h2>1. 폴더 만들기</h2>
+      <h2 id="mkdir">1. 폴더 만들기</h2>
       <p>터미널을 열고 프로젝트 폴더를 만듭니다.</p>
       <CodeBlock>{`mkdir my-first-repo
 cd my-first-repo`}</CodeBlock>
 
       {/* ===== STEP 2 ===== */}
-      <h2>2. Git 저장소 초기화</h2>
+      <h2 id="git-init">2. Git 저장소 초기화</h2>
       <CodeBlock>git init</CodeBlock>
       <p>이 폴더가 Git이 추적하는 저장소가 됩니다. 숨김 폴더 <code>.git</code>이 생성됩니다.</p>
 
       {/* ===== STEP 3 ===== */}
-      <h2>3. 파일 만들고 커밋하기</h2>
+      <h2 id="first-commit">3. 파일 만들고 커밋하기</h2>
       <CodeBlock>{`echo "# My First Repo" > README.md
 git add README.md
 git commit -m "first commit"`}</CodeBlock>
@@ -227,7 +227,7 @@ git commit -m "first commit"`}</CodeBlock>
       </p>
 
       {/* ===== STEP 4 ===== */}
-      <h2>4. GitHub에 저장소 만들기</h2>
+      <h2 id="create-repo">4. GitHub에 저장소 만들기</h2>
       <p>
         GitHub 웹사이트에서 이 로컬 저장소를 업로드할 <strong>빈 저장소</strong>를 만들어야 합니다.
         아래 과정을 따라하세요.
@@ -428,13 +428,13 @@ git commit -m "first commit"`}</CodeBlock>
       </GithubMockup>
 
       {/* ===== STEP 5 ===== */}
-      <h2>5. 로컬 ↔ GitHub 연결</h2>
+      <h2 id="connect">5. 로컬 ↔ GitHub 연결</h2>
       <p>
         위 Quick Setup 화면에 나온 명령어를 터미널에 <strong>한 줄씩</strong> 입력합니다.
         각 명령어가 무엇을 하는지 하나씩 알아봅시다.
       </p>
 
-      <h3>5-1. 원격 저장소 주소 등록</h3>
+      <h3 id="remote-add">5-1. 원격 저장소 주소 등록</h3>
       <CodeBlock>{`git remote add origin https://github.com/유저이름/my-first-repo.git`}</CodeBlock>
       <p>
         <code>origin</code>이라는 이름으로 GitHub 저장소 주소를 등록합니다.
@@ -446,7 +446,7 @@ git commit -m "first commit"`}</CodeBlock>
         본인의 GitHub 사용자 이름으로 바꿔야 합니다.
       </Callout>
 
-      <h3>5-2. 브랜치 이름을 main으로 변경</h3>
+      <h3 id="branch-rename">5-2. 브랜치 이름을 main으로 변경</h3>
       <CodeBlock>git branch -M main</CodeBlock>
       <p>
         Git 버전에 따라 기본 브랜치가 <code>master</code>로 만들어질 수 있습니다.
@@ -458,7 +458,7 @@ git commit -m "first commit"`}</CodeBlock>
         그냥 항상 실행하면 안전합니다.
       </Callout>
 
-      <h3>5-3. GitHub에 Push (업로드)</h3>
+      <h3 id="first-push">5-3. GitHub에 Push (업로드)</h3>
       <CodeBlock>git push -u origin main</CodeBlock>
       <p>
         로컬의 커밋을 GitHub으로 업로드합니다.
@@ -469,7 +469,7 @@ git commit -m "first commit"`}</CodeBlock>
         <li><code>main</code> — 업로드할 브랜치 이름</li>
       </ul>
 
-      <h3>5-4. 인증 (처음 한 번)</h3>
+      <h3 id="auth">5-4. 인증 (처음 한 번)</h3>
       <p>
         처음 push하면 GitHub 로그인 팝업이 뜨거나 터미널에서 인증을 요구합니다.
       </p>
@@ -511,7 +511,7 @@ git commit -m "first commit"`}</CodeBlock>
       </Callout>
 
       {/* ===== 전체 흐름 요약 ===== */}
-      <h2>전체 흐름 요약</h2>
+      <h2 id="flow-summary">전체 흐름 요약</h2>
 
       <div style={{
         background: '#161b22', border: '1px solid #30363d', borderRadius: 8,
@@ -545,7 +545,7 @@ git commit -m "first commit"`}</CodeBlock>
         </div>
       </div>
 
-      <h2>6. 잘 되었는지 확인하기</h2>
+      <h2 id="verify">6. 잘 되었는지 확인하기</h2>
       <p>
         push가 완료되면 <code>github.com/유저이름/my-first-repo</code>에 접속해보세요.
         로컬에서 만든 README.md 파일이 보이면 성공입니다!

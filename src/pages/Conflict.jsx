@@ -12,7 +12,7 @@ export default function Conflict() {
         이때 발생하는 것이 <strong>충돌(Conflict)</strong>이며, 사람이 직접 해결해야 합니다.
       </p>
 
-      <h2>충돌은 왜 발생하나요?</h2>
+      <h2 id="why-conflict">충돌은 왜 발생하나요?</h2>
       <p>
         브랜치 A와 브랜치 B가 같은 파일의 같은 줄을 서로 다르게 수정한 뒤
         merge하면 Git이 어느 쪽을 택해야 할지 모르기 때문입니다.
@@ -39,7 +39,7 @@ export default function Conflict() {
         충돌은 에러가 아닙니다. Git이 "이건 사람이 판단해달라"고 알려주는 것뿐입니다.
       </Callout>
 
-      <h2>1. 충돌 재현해보기</h2>
+      <h2 id="reproduce">1. 충돌 재현해보기</h2>
       <p><code>main</code>과 <code>feature</code> 브랜치에서 같은 줄을 다르게 수정합니다.</p>
       <CodeBlock title="main 브랜치에서">{`echo "Hello from main" > greeting.txt
 git add greeting.txt
@@ -61,7 +61,7 @@ git merge feature/greeting`}</CodeBlock>
         </div>
       </TerminalOutput>
 
-      <h2>2. 충돌 마커 읽기</h2>
+      <h2 id="markers">2. 충돌 마커 읽기</h2>
       <p>
         충돌이 발생한 파일을 열면 Git이 삽입한 <strong>충돌 마커</strong>를 볼 수 있습니다.
       </p>
@@ -81,14 +81,14 @@ Hello from feature
         반드시 마커를 모두 제거해야 합니다.
       </Callout>
 
-      <h2>3. 충돌 해결하기</h2>
+      <h2 id="resolve">3. 충돌 해결하기</h2>
       <p>
         마커를 지우고, 최종 결과물만 남깁니다.
         두 내용 중 하나를 고르거나, 합치거나, 완전히 새로 작성할 수 있습니다.
       </p>
       <CodeBlock title="greeting.txt (해결 후)">{`Hello from main and feature`}</CodeBlock>
 
-      <h2>4. 해결 후 커밋</h2>
+      <h2 id="commit-after">4. 해결 후 커밋</h2>
       <p>충돌을 해결했으면 평소처럼 <code>add</code> → <code>commit</code> 합니다.</p>
       <CodeBlock>{`git add greeting.txt
 git commit -m "merge: greeting 충돌 해결"`}</CodeBlock>
@@ -106,7 +106,7 @@ git commit -m "merge: greeting 충돌 해결"`}</CodeBlock>
         자동으로 나타나서 클릭 한 번으로 해결할 수 있습니다.
       </Callout>
 
-      <h2>자주 쓰는 충돌 관련 명령어</h2>
+      <h2 id="conflict-commands">자주 쓰는 충돌 관련 명령어</h2>
       <table className="cheat-table">
         <thead>
           <tr><th>명령어</th><th>설명</th></tr>

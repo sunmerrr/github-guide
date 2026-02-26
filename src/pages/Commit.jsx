@@ -9,18 +9,18 @@ export default function Commit() {
       <h1>Commit</h1>
       <p>파일을 수정하고, 변경 사항을 기록하는 과정입니다.</p>
 
-      <h2>커밋의 흐름</h2>
+      <h2 id="commit-flow">커밋의 흐름</h2>
       <p>
         <strong>파일 수정 → <code>git add</code> → <code>git commit</code></strong>
       </p>
 
       {/* ===== 1 ===== */}
-      <h2>1. 파일 수정</h2>
+      <h2 id="modify">1. 파일 수정</h2>
       <p>README.md에 한 줄을 추가해봅시다.</p>
       <CodeBlock>{`echo "Hello, Git!" >> README.md`}</CodeBlock>
 
       {/* ===== 2 ===== */}
-      <h2>2. 상태 확인</h2>
+      <h2 id="status">2. 상태 확인</h2>
       <CodeBlock>git status</CodeBlock>
       <p>수정된 파일이 <strong style={{ color: '#f85149' }}>빨간색</strong>으로 표시됩니다. (아직 스테이징 안 됨)</p>
 
@@ -35,7 +35,7 @@ export default function Commit() {
       </TerminalOutput>
 
       {/* ===== 3 ===== */}
-      <h2>3. 스테이징 (add)</h2>
+      <h2 id="staging">3. 스테이징 (add)</h2>
       <CodeBlock>git add README.md</CodeBlock>
       <p>커밋할 파일을 선택합니다. 전체 파일을 추가하려면:</p>
       <CodeBlock>git add .</CodeBlock>
@@ -53,7 +53,7 @@ export default function Commit() {
       </TerminalOutput>
 
       {/* ===== 4 ===== */}
-      <h2>4. 커밋</h2>
+      <h2 id="commit">4. 커밋</h2>
       <CodeBlock>git commit -m "README에 인사 추가"</CodeBlock>
 
       <TerminalOutput command='git commit -m "README에 인사 추가"'>
@@ -66,7 +66,7 @@ export default function Commit() {
       </Callout>
 
       {/* ===== 5 ===== */}
-      <h2>5. 커밋 기록 확인</h2>
+      <h2 id="log">5. 커밋 기록 확인</h2>
       <CodeBlock>git log --oneline</CodeBlock>
 
       <TerminalOutput command="git log --oneline">

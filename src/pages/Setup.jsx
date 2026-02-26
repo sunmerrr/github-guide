@@ -9,7 +9,7 @@ export default function Setup() {
       <h1>Setup</h1>
       <p>GitHub 가입부터 Git 설치, 초기 설정까지 한번에 끝내기.</p>
       {/* ===== 1. GitHub 가입 ===== */}
-      <h2>1. GitHub 가입</h2>
+      <h2 id="github-signup">1. GitHub 가입</h2>
       <p>
         <a href="https://github.com" target="_blank" rel="noreferrer">github.com</a>에 접속해서 <strong>Sign up</strong>을 클릭합니다.
       </p>
@@ -66,19 +66,19 @@ export default function Setup() {
       </Callout>
 
       {/* ===== 2. 터미널 열기 ===== */}
-      <h2>2. 터미널 열기</h2>
+      <h2 id="terminal">2. 터미널 열기</h2>
       <p>
         이 가이드에서는 <strong>터미널</strong>에 명령어를 입력하며 진행합니다.
         먼저 터미널을 열어주세요.
       </p>
 
-      <h3>Mac</h3>
+      <h3 id="terminal-mac">Mac</h3>
       <p>
         Spotlight 검색(<code>Cmd + Space</code>)에서 <strong>터미널</strong>을 검색하거나,
         Finder → 응용 프로그램 → 유틸리티 → 터미널을 실행합니다.
       </p>
 
-      <h3>Windows</h3>
+      <h3 id="terminal-windows">Windows</h3>
       <p>
         시작 메뉴에서 <strong>터미널</strong> 또는 <strong>PowerShell</strong>을 검색해서 실행합니다.
       </p>
@@ -93,9 +93,9 @@ export default function Setup() {
       </Callout>
 
       {/* ===== 3. Git 설치 ===== */}
-      <h2>3. Git 설치</h2>
+      <h2 id="git-install">3. Git 설치</h2>
 
-      <h3>Mac</h3>
+      <h3 id="git-install-mac">Mac</h3>
       <p>먼저 Homebrew를 설치합니다. Homebrew는 Mac에서 프로그램을 터미널로 간편하게 설치할 수 있는 도구로, 앞으로도 자주 쓰이니 설치해두면 좋습니다.</p>
       <CodeBlock>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</CodeBlock>
       <p>Homebrew 설치가 끝나면 Git을 설치합니다.</p>
@@ -105,14 +105,14 @@ export default function Setup() {
         이미 Homebrew가 설치되어 있다면 바로 <code>brew install git</code>만 실행하면 됩니다.
       </Callout>
 
-      <h3>Windows</h3>
+      <h3 id="git-install-windows">Windows</h3>
       <p>
         <a href="https://git-scm.com/downloads/win" target="_blank" rel="noreferrer">git-scm.com/downloads/win</a>에 접속해서
         상단의 <strong>"Click here to download"</strong> 버튼을 클릭합니다 (64-bit 설치 파일).
         다운로드된 <strong>.exe</strong> 파일을 실행하고, 설치 중 나오는 옵션은 모두 기본값으로 두고 Next를 눌러 완료합니다.
       </p>
 
-      <h3>설치 확인</h3>
+      <h3 id="git-verify">설치 확인</h3>
       <CodeBlock>git --version</CodeBlock>
 
       <TerminalOutput command="git --version">
@@ -121,7 +121,7 @@ export default function Setup() {
       <p>이렇게 버전 번호가 나오면 성공입니다.</p>
 
       {/* ===== 4. 초기 설정 ===== */}
-      <h2>4. 초기 설정</h2>
+      <h2 id="git-config">4. 초기 설정</h2>
       <p>Git에 내 이름과 이메일을 등록합니다. (커밋할 때 사용됩니다)</p>
       <CodeBlock>{`git config --global user.name "내 이름"
 git config --global user.email "내이메일@example.com"`}</CodeBlock>
