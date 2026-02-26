@@ -10,6 +10,7 @@ import PullRequest from './pages/PullRequest';
 import Conflict from './pages/Conflict';
 import Cheatsheet from './pages/Cheatsheet';
 import Glossary from './pages/Glossary';
+import AiHelper from './pages/AiHelper';
 
 const router = createHashRouter([
   {
@@ -17,6 +18,7 @@ const router = createHashRouter([
     children: [
       { path: '/', element: <Home /> },
       { path: '/setup', element: <Setup /> },
+      { path: '/ai-helper', element: <AiHelper /> },
       { path: '/first-repo', element: <FirstRepo /> },
       { path: '/commit', element: <Commit /> },
       { path: '/push-pull', element: <PushPull /> },

@@ -14,6 +14,7 @@ const CARDS_ADVANCED = [
 ];
 
 const CARDS_TIP = [
+  { icon: '🤖', path: '/ai-helper', title: 'AI Helper', desc: 'AI에게 Git 작업 맡기는 법' },
   { icon: '📋', path: '/cheatsheet', title: 'Cheatsheet', desc: '명령어 한눈에 보기' },
   { icon: '📖', path: '/glossary', title: 'Glossary', desc: 'Git/GitHub 용어 사전' },
 ];

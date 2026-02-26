@@ -169,6 +169,42 @@ export default function FirstRepo() {
         로컬(내 컴퓨터)에서 저장소를 만들고, GitHub에 올리는 전체 과정을 따라해 봅니다.
       </p>
 
+      <div style={{
+        background: 'linear-gradient(135deg, rgba(88,166,255,0.08), rgba(63,185,80,0.08))',
+        border: '1px solid rgba(88,166,255,0.3)',
+        borderRadius: 8,
+        padding: '1rem 1.25rem',
+        marginBottom: '1.5rem',
+        display: 'flex',
+        gap: '0.75rem',
+        alignItems: 'flex-start',
+      }}>
+        <span style={{ fontSize: '1.3rem', flexShrink: 0, lineHeight: 1.4 }}>🤖</span>
+        <div style={{ fontSize: '0.9rem', lineHeight: 1.7 }}>
+          <div style={{ color: '#e6edf3', fontWeight: 600, marginBottom: '0.25rem' }}>
+            여기서부터는 AI가 대신 해줄 수 있습니다
+          </div>
+          <div style={{ color: '#8b949e' }}>
+            Setup만 완료했다면, 이 페이지부터의 모든 Git 작업을
+            AI에게 맡길 수 있습니다. 명령어를 몰라도 괜찮아요.
+          </div>
+          <a href="#/ai-helper" style={{
+            display: 'inline-block',
+            marginTop: '0.5rem',
+            padding: '0.35rem 0.85rem',
+            background: '#21262d',
+            border: '1px solid #30363d',
+            borderRadius: 6,
+            color: '#58a6ff',
+            fontSize: '0.85rem',
+            fontWeight: 600,
+            textDecoration: 'none',
+          }}>
+            AI에게 맡기는 법 보기 →
+          </a>
+        </div>
+      </div>
+
       {/* ===== STEP 1 ===== */}
       <h2>1. 폴더 만들기</h2>
       <p>터미널을 열고 프로젝트 폴더를 만듭니다.</p>

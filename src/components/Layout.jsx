@@ -15,6 +15,7 @@ const NAV_ADVANCED = [
 ];
 
 const NAV_TIP = [
+  { to: '/ai-helper', label: 'AI Helper' },
   { to: '/cheatsheet', label: 'Cheatsheet' },
   { to: '/glossary', label: 'Glossary' },
 ];
