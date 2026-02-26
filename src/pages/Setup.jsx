@@ -81,7 +81,6 @@ export default function Setup() {
       <h3>Windows</h3>
       <p>
         시작 메뉴에서 <strong>터미널</strong> 또는 <strong>PowerShell</strong>을 검색해서 실행합니다.
-        Git 설치 후에는 <strong>Git Bash</strong>를 사용해도 됩니다.
       </p>
 
       <p>
