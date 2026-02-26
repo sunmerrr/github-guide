@@ -107,7 +107,8 @@ export default function Setup() {
 
       <h3>Windows</h3>
       <p>
-        <a href="https://git-scm.com/downloads/win" target="_blank" rel="noreferrer">git-scm.com/downloads/win</a>에 접속해서 설치 파일을 다운로드합니다.
+        <a href="https://git-scm.com/downloads/win" target="_blank" rel="noreferrer">git-scm.com/downloads/win</a>에 접속해서
+        상단의 <strong>"Click here to download"</strong> 버튼을 클릭합니다 (64-bit 설치 파일).
         다운로드된 <strong>.exe</strong> 파일을 실행하고, 설치 중 나오는 옵션은 모두 기본값으로 두고 Next를 눌러 완료합니다.
       </p>
 
