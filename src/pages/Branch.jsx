@@ -15,6 +15,14 @@ export default function Branch() {
         새 기능이나 수정은 별도 브랜치에서 작업한 뒤, 완료되면 main에 합칩니다.
       </p>
 
+      <h2>왜 브랜치를 쓰나요?</h2>
+      <ul>
+        <li><strong>안전한 실험</strong> — main 코드를 건드리지 않고 새 기능을 시도할 수 있습니다</li>
+        <li><strong>동시 작업</strong> — 여러 사람이 각자 브랜치에서 독립적으로 개발할 수 있습니다</li>
+        <li><strong>깔끔한 이력</strong> — 기능별로 브랜치를 나누면 변경 이력을 추적하기 쉽습니다</li>
+        <li><strong>쉬운 롤백</strong> — 문제가 생기면 해당 브랜치만 버리면 됩니다</li>
+      </ul>
+
       <div style={{
         background: '#161b22', border: '1px solid #30363d', borderRadius: 8,
         padding: '1.25rem', marginBottom: '1.25rem', textAlign: 'center',
