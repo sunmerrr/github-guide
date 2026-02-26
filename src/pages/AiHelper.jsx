@@ -69,10 +69,15 @@ export default function AiHelper() {
       <Callout type="tip">
         GitHub 가입, Git 설치, 초기 설정은 <a href="#/setup">Setup 페이지</a>에서
         다루고 있습니다.
-        <strong> 이미 끝냈다면 바로 <a href="#gh-cli">GitHub CLI 인증</a>으로 넘어가세요.</strong>
+        <strong> 이미 끝냈다면 바로{' '}
+          <a
+            href="#gh-cli"
+            onClick={(e) => { e.preventDefault(); document.getElementById('gh-cli')?.scrollIntoView({ behavior: 'smooth' }); }}
+          >GitHub CLI 인증</a>
+        으로 넘어가세요.</strong>
       </Callout>
 
-      <h2>사전 준비 (이것만 직접 하세요)</h2>
+      <h2 id="prereqs">사전 준비 (이것만 직접 하세요)</h2>
       <p>아래 항목은 계정과 설치에 관한 것이라 AI가 대신할 수 없습니다.</p>
       <ul>
         <li>GitHub 가입 (github.com)</li>
@@ -104,13 +109,13 @@ gh auth login`}</CodeBlock>
       </Callout>
 
       {/* ===== 말하는 법 ===== */}
-      <h2>AI에게 이렇게 말하세요</h2>
+      <h2 id="how-to-ask">AI에게 이렇게 말하세요</h2>
       <p>
         어려운 용어를 쓸 필요 없습니다.
         <strong> 하고 싶은 것을 그냥 말하면 됩니다.</strong>
       </p>
 
-      <h3>저장소 만들기</h3>
+      <h3 id="create-repo">저장소 만들기</h3>
       <PromptExample label="처음 시작할 때">
         my-project라는 이름으로 새 폴더 만들고 Git 저장소로 초기화해줘
       </PromptExample>
@@ -118,7 +123,7 @@ gh auth login`}</CodeBlock>
         이 프로젝트를 GitHub에 올려줘
       </PromptExample>
 
-      <h3>저장 & 업로드</h3>
+      <h3 id="save-upload">저장 & 업로드</h3>
       <PromptExample label="변경사항 저장">
         지금까지 수정한 거 커밋해줘
       </PromptExample>
@@ -129,7 +134,7 @@ gh auth login`}</CodeBlock>
         수정한 파일 커밋하고 push까지 해줘
       </PromptExample>
 
-      <h3>최신 코드 받기</h3>
+      <h3 id="pull-clone">최신 코드 받기</h3>
       <PromptExample label="동기화">
         GitHub에서 최신 코드 pull 해줘
       </PromptExample>
@@ -137,7 +142,7 @@ gh auth login`}</CodeBlock>
         이 GitHub 주소에서 코드 clone해줘: https://github.com/...
       </PromptExample>
 
-      <h3>브랜치 & PR</h3>
+      <h3 id="branch-pr">브랜치 & PR</h3>
       <PromptExample label="새 브랜치">
         새 기능 작업할 브랜치 만들어줘
       </PromptExample>
@@ -148,7 +153,7 @@ gh auth login`}</CodeBlock>
         main 브랜치로 전환해줘
       </PromptExample>
 
-      <h3>상태 확인</h3>
+      <h3 id="status">상태 확인</h3>
       <PromptExample label="현재 상태">
         지금 Git 상태 확인해줘
       </PromptExample>
@@ -157,7 +162,7 @@ gh auth login`}</CodeBlock>
       </PromptExample>
 
       {/* ===== 실전 시나리오 ===== */}
-      <h2>실전 예시: 프로젝트 처음부터 끝까지</h2>
+      <h2 id="example">실전 예시: 프로젝트 처음부터 끝까지</h2>
       <p>AI에게 순서대로 말하기만 하면 됩니다.</p>
 
       <StepCard number="1" title="프로젝트 만들기">
@@ -195,7 +200,7 @@ gh auth login`}</CodeBlock>
       </StepCard>
 
       {/* ===== 팁 ===== */}
-      <h2>더 잘 쓰는 팁</h2>
+      <h2 id="tips">더 잘 쓰는 팁</h2>
 
       <Callout type="tip">
         <strong>구체적으로 말할수록 좋습니다.</strong>{' '}
