@@ -84,7 +84,7 @@ export default function Setup() {
       </p>
 
       <p>
-        앞으로 아래처럼 생긴 박스가 나오면, 안에 있는 명령어를 터미널에 <strong>복사·붙여넣기</strong> 하면 됩니다.
+        앞으로 아래처럼 생긴 박스(코드 블록)가 나오면, 안에 있는 명령어를 터미널에 <strong>복사·붙여넣기</strong> 하면 됩니다.
       </p>
       <CodeBlock>echo "Hello Git!"</CodeBlock>
 
