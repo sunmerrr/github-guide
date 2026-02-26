@@ -66,27 +66,24 @@ export default function AiHelper() {
       </Callout>
 
       {/* ===== 사전 준비 ===== */}
-      <h2>사전 준비 (이것만 직접 하세요)</h2>
-
-      <Callout type="info">
-        아래 항목 중 GitHub 가입 ~ Git 초기 설정은 <a href="#/setup">Setup 페이지</a>에서
-        자세히 다루고 있습니다.
-        <strong> 이미 Setup을 완료했다면 GitHub CLI 인증까지 건너뛰세요.</strong>
+      <Callout type="tip">
+        GitHub 가입, Git 설치, 초기 설정은 <a href="#/setup">Setup 페이지</a>에서
+        다루고 있습니다.
+        <strong> 이미 끝냈다면 바로 <a href="#gh-cli">GitHub CLI 인증</a>으로 넘어가세요.</strong>
       </Callout>
 
+      <h2>사전 준비 (이것만 직접 하세요)</h2>
       <p>아래 항목은 계정과 설치에 관한 것이라 AI가 대신할 수 없습니다.</p>
       <ul>
         <li>GitHub 가입 (github.com)</li>
         <li>Git 설치 (brew install git 또는 Windows 설치 파일)</li>
         <li><code>git config</code>로 이름/이메일 설정</li>
-        <li>처음 push할 때 GitHub 인증 (로그인 팝업 또는 토큰)</li>
       </ul>
       <p>
         자세한 방법은 <a href="#/setup">Setup 페이지</a>를 참고하세요.
-        이 준비가 끝나면 나머지는 전부 AI에게 맡길 수 있습니다.
       </p>
 
-      <h3>GitHub CLI 인증 (처음 한 번)</h3>
+      <h3 id="gh-cli">GitHub CLI 인증 (처음 한 번)</h3>
       <p>
         AI가 터미널에서 GitHub 저장소를 만들려면 <strong>GitHub CLI(gh)</strong>가 필요합니다.
         아래 명령어를 한 번만 실행하면 이후로는 AI가 알아서 저장소 생성, PR 만들기 등을 처리할 수 있습니다.
