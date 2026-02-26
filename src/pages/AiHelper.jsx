@@ -67,6 +67,13 @@ export default function AiHelper() {
 
       {/* ===== 사전 준비 ===== */}
       <h2>사전 준비 (이것만 직접 하세요)</h2>
+
+      <Callout type="info">
+        아래 항목 중 GitHub 가입 ~ Git 초기 설정은 <a href="#/setup">Setup 페이지</a>에서
+        자세히 다루고 있습니다.
+        <strong> 이미 Setup을 완료했다면 GitHub CLI 인증까지 건너뛰세요.</strong>
+      </Callout>
+
       <p>아래 항목은 계정과 설치에 관한 것이라 AI가 대신할 수 없습니다.</p>
       <ul>
         <li>GitHub 가입 (github.com)</li>
