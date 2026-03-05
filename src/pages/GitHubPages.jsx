@@ -46,6 +46,11 @@ export default function GitHubPages() {
         별도의 서버 없이 <code>username.github.io</code> 주소로 바로 공개됩니다.
       </p>
 
+      <Callout type="warn">
+        무료 플랜에서는 <strong>Public 저장소</strong>에서만 GitHub Pages를 사용할 수 있습니다.
+        Private 저장소에서 Pages를 켜려면 GitHub Pro 이상의 유료 플랜이 필요합니다.
+      </Callout>
+
       <Callout type="info">
         GitHub Pages는 <strong>정적 사이트</strong>(HTML, CSS, JS)만 지원합니다.
         React/Vue 등은 빌드 후 결과물을 배포하면 됩니다.
