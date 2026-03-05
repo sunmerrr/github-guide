@@ -9,6 +9,7 @@ const PAGES = [
   { path: '/branch', title: 'Branch' },
   { path: '/pull-request', title: 'Pull Request' },
   { path: '/conflict', title: 'Conflict' },
+  { path: '/github-pages', title: 'GitHub Pages' },
   { path: '/ai-helper', title: 'AI Helper' },
   { path: '/cheatsheet', title: 'Cheatsheet' },
   { path: '/glossary', title: 'Glossary' },

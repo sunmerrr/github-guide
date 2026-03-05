@@ -11,6 +11,7 @@ import Conflict from './pages/Conflict';
 import Cheatsheet from './pages/Cheatsheet';
 import Glossary from './pages/Glossary';
 import AiHelper from './pages/AiHelper';
+import GitHubPages from './pages/GitHubPages';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
       { path: '/branch', element: <Branch /> },
       { path: '/pull-request', element: <PullRequest /> },
       { path: '/conflict', element: <Conflict /> },
+      { path: '/github-pages', element: <GitHubPages /> },
       { path: '/cheatsheet', element: <Cheatsheet /> },
       { path: '/glossary', element: <Glossary /> },
     ],

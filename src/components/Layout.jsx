@@ -12,6 +12,7 @@ const NAV_ADVANCED = [
   { to: '/branch', label: 'Branch' },
   { to: '/pull-request', label: 'PR' },
   { to: '/conflict', label: 'Conflict' },
+  { to: '/github-pages', label: 'Pages' },
 ];
 
 const NAV_TIP = [
